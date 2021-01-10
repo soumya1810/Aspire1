@@ -1,0 +1,148 @@
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspire</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+  
+  <title>Netrip</title>
+  <style type="text/css">
+  	body {
+  background-color: #000;
+  /*font-family: 'PT Sans', sans-serif;*/
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 38vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+ /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);*/
+  margin: 0.5em auto;
+}
+.entryLink {
+  color: #fff;
+  opacity: 1;
+}
+
+.entryLink:hover {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.entryLink:focus {
+  color: #fff;
+  opacity: 0.8;
+  outline: 0;
+  text-decoration: none;
+}
+
+.entryLink:visited {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear 2.5s infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(https://helloflo.com/wp-content/uploads/2016/03/shutterstock_322577240.jpg);
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20150826164013-two-office-woman-working-on-project.jpeg);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://codeafricang.com/img/coding.png);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(https://www.workingmother.com/sites/workingmother.com/files/styles/500_1x_/public/images/2016/03/group_working_women.jpg?itok=h0ernmld&fc=50,50);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(https://vidcruiter.com/wp-content/uploads/2019/03/International-Womens-Day.jpg);
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0%, 40% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+    transform: scale(1);
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+    transform: scale(1.1);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+  opacity: 1;
+}
+  </style>
+</head>
+
+<body>
+  
+  
+ <div id="landing-header">
+    <h1><a class="entryLink" href="about.html">Welcome to Aspire For Her</a></h1>
+    <a class="entryLink" href="about.html">Lets join hands and change the world</a>
+  </div>
+  
+  <ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+
+</html>
+
